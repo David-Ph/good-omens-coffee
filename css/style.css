@@ -54,7 +54,10 @@ body{
     color: #fff;
 }
 .current-page{
-    text-decoration: underline;
+    border-bottom: 2px solid saddlebrown;
+}
+.current-page:hover{
+    border-bottom: 2px solid #fff;
 }
 @media screen and (max-width: 600px) {
     .container-nav{
