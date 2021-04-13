@@ -91,8 +91,18 @@ body{
 /* SECTION 1 */
 .section-1{
     background-image: url("../img/background/landing-page-bg.jpg");
-
 }
+.section-1-content{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 5em;
+}
+.random-quote{
+    text-shadow: 2px 2px 5px #000;
+}
+
 
 /* SECTION 2 */
 .section-2{
@@ -117,7 +127,7 @@ body{
 .quote{
     font-family: 'Cinzel', serif;
     font-weight: 500;
-    color: peru;
+    color:sandybrown;
     font-size: 2rem;
 }
 .left-footer{
