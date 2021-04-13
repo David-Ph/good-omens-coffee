@@ -15,7 +15,7 @@ body{
     width: 90%;
     max-width: 1400px;
 }
-.container-flex{
+.container-nav{
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +24,7 @@ body{
 
 .page-header{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
 }
 .logo{
@@ -43,7 +43,7 @@ body{
     width: 100%;
     height: 100%;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .nav-link{
     color:saddlebrown;
@@ -56,6 +56,25 @@ body{
 .current-page{
     text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+    .container-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .page-logo{
+        border-bottom: 3px solid saddlebrown;
+    }
+    .nav-ul{
+        flex-direction: column;
+    }
+    .nav-ul li{
+        margin-bottom: 0.55em;
+    }
+}
 /* //// */
 /* MAIN */
 /* //// */
@@ -65,4 +84,5 @@ body{
     background-image: url("../img/background/landing-page-bg.jpg");
     min-height: 100vh;
     background-size: cover;
+    background-position: center;
 }
