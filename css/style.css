@@ -24,6 +24,9 @@ body{
     max-height: 750px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .transparent-box{
     background-color: rgba(0, 0, 0, 0.5);  
@@ -103,7 +106,7 @@ body{
     background-image: url("../img/background/landing-page-bg.jpg");
 }
 .section-1-content{
-    min-height: 90vh;
+    min-height: 80vh;
     max-height: 750px;
     text-align: center;
     display: flex;
@@ -118,13 +121,10 @@ body{
 /* SECTION 2 */
 .section-2{
     background-image: url('../img/background/middle-section-4.jpg');
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .section-2-content{
     text-align: center;
-
 }
 .section-2-content p{
     font-size: 1.5rem;
@@ -135,11 +135,12 @@ body{
 .cta a{
     text-decoration: none;
     display: inline-block;
-    width: 100px;
-    height: 50px;
+    /* width: 100px;
+    height: 50px; */
     border-radius: 10px;
     font-size: 1.3rem;
     line-height: 50px;
+    padding: 0.2em;
 }
 .cta a:hover{
     padding: 0.3em;
@@ -159,7 +160,7 @@ body{
     color: #fff;
 }
 @media screen and (min-width: 700px){
-    .section-2 .container{
+    .container-section .container{
         display: flex;
         flex-direction: row-reverse;
     }
@@ -170,6 +171,17 @@ body{
 /* SECTION 3 */
 .section-3{
     background-image: url('../img/background/bottom-section-bg.jpg')
+}
+.address{
+    margin: 1em 0;
+}
+@media screen and (min-width: 700px){
+    .section-3 .container{
+        flex-direction: row;
+    }
+    .section-2-content{
+        max-width: 600px;
+    }
 }
 
 /* /////// */
