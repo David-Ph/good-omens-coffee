@@ -277,3 +277,18 @@ body{
     border: 1px solid #fff;
     padding: 0.4em;
 }
+@media screen and (min-width: 700px){
+    .shop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .bean-listing{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .bean-listing{
+        width: 31%;
+    }
+}
