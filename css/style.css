@@ -17,11 +17,20 @@ body{
 .container-flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container-section{
-    min-height: 100vh;
+    min-height: 90vh;
+    max-height: 750px;
     background-size: cover;
     background-position: center;
+}
+.transparent-box{
+    background-color: rgba(0, 0, 0, 0.5);  
+    padding: 2em;
+    box-shadow: inset 0 0 10vw 2.5vw black;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 
 /* /////////////// */
@@ -65,7 +74,7 @@ body{
 .current-page:hover{
     border-bottom: 2px solid #fff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .container-flex{
         flex-direction: column;
         align-items: center;
@@ -73,6 +82,7 @@ body{
     .logo{
         width: 100%;
         text-align: center;
+        margin-bottom: 1em;
     }
     .page-logo{
         border-bottom: 3px solid saddlebrown;
@@ -93,7 +103,8 @@ body{
     background-image: url("../img/background/landing-page-bg.jpg");
 }
 .section-1-content{
-    min-height: 100vh;
+    min-height: 90vh;
+    max-height: 750px;
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
@@ -106,7 +117,55 @@ body{
 
 /* SECTION 2 */
 .section-2{
-    background-image: url('../img/background/middle-section-4.jpg')
+    background-image: url('../img/background/middle-section-4.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-2-content{
+    text-align: center;
+
+}
+.section-2-content p{
+    font-size: 1.5rem;
+}
+.coffee-desc{
+    margin-bottom: 0.6em;
+}
+.cta a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    line-height: 50px;
+}
+.cta a:hover{
+    padding: 0.3em;
+}
+.buy-now{
+    background-color: rgb(139, 69, 19, 0.85);
+    color: #fff;
+    margin-right: 0.5em;
+}
+.buy-now:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+}
+.browse-more{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    color: #fff;
+}
+@media screen and (min-width: 700px){
+    .section-2 .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .section-2-content{
+        max-width: 600px;
+    }
 }
 /* SECTION 3 */
 .section-3{
@@ -119,7 +178,7 @@ body{
 .page-footer{
     background-color: #000;
     width: 100%;
-    min-height: 20vh;
+    min-height: 15vh;
     text-align: center;
     padding: 1em;
     box-sizing: border-box;
