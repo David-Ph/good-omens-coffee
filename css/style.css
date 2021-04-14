@@ -292,3 +292,35 @@ body{
         width: 31%;
     }
 }
+
+/* /////////////// */
+/* ABOUT US */
+/* /////////////// */
+.about-us-container{
+    background-image: url('../img/background/about-us-bg.jpg');
+    padding: 5em 0;
+    box-sizing: border-box;
+}
+.subtitle{
+    margin: 1em 0;
+}
+.address, .opening-time{
+    font-size: 1.6rem;
+}
+.map{
+    margin: 2em 0;
+}
+.temp-map{
+    width: 100%;
+}
+@media screen and (min-width: 1200px) {
+    .about-us-container .transparent-box{
+        display: flex;
+    }
+    .cafe-info{
+        width: 50%;
+    }
+    .map{
+        width: 50%;
+    }
+}
