@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/David-Ph/good-omens-coffee#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.4"
   }
 }

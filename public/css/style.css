@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+h3{
+    font-size: 1.3rem;
+}
 body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -23,6 +26,7 @@ body{
     min-height: 90vh;
     background-size: cover;
     background-position: center;
+    padding: 3em 0;
 }
 .container-section-flex{
     display: flex;
@@ -50,13 +54,13 @@ body{
     position: absolute;
 }
 .logo{
-    width: 50%;
+    width: 40%;
 }
 .page-logo{
     width: 50%;
 }
 .main-nav{
-    width: 50%;
+    width: 60%;
 }
 .nav-ul{
     list-style: none;
@@ -110,12 +114,8 @@ body{
     background-image: url("../img/background/landing-page-bg.jpg");
 }
 .section-1-content{
-    min-height: 80vh;
-    max-height: 750px;
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 5em;
+    padding-top: 25em;
 }
 .random-quote{
     text-shadow: 2px 2px 5px #000;
@@ -246,7 +246,6 @@ body{
 }
 .shop-container{
     background-image: url('../img/background/shop-bg.jpg');
-    padding: 2em 0;
 }
 .bean-listing{
     border: 1px solid #fff;
@@ -254,6 +253,7 @@ body{
     align-items: center;
     border-radius: 25px;
     margin-bottom: 2em;
+    padding: 0.5em;
 }
 .bean-listing-img{
     width: 50%;
@@ -298,7 +298,6 @@ body{
 /* /////////////// */
 .about-us-container{
     background-image: url('../img/background/about-us-bg.jpg');
-    padding: 5em 0;
     box-sizing: border-box;
 }
 .subtitle{
@@ -323,4 +322,12 @@ body{
     .map{
         width: 50%;
     }
+}
+
+/* /////////////// */
+/* ADMIN PAGE */
+/* /////////////// */
+
+.admin-container{
+    background-image: url('../img/background/admin-bg.jpg');
 }
