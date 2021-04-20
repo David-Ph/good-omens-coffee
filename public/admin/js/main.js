@@ -1,5 +1,17 @@
+const createBeanBtn = document.querySelector('#create-bean-btn');
+
+
 document.addEventListener('DOMContentLoaded', async function(){
     addBeans();
+})
+
+createBeanBtn.addEventListener('click', function(){
+    let beansTab = document.querySelector('#v-pills-beans');
+    beansTab.classList.remove('show');
+    beansTab.classList.remove('active');
+    let createBeanTab = document.querySelector('#v-pills-create-bean');
+    createBeanTab.classList.add('show');
+    createBeanTab.classList.add('active');
 })
 
 async function addBeans(){

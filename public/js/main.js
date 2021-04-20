@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function(){
     let beans = await getBeans();
-    console.log(beans);
     let beansShop = document.querySelector('.shop');
     beansShop.innerHTML = '';
     beans.forEach((bean) =>{
@@ -11,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async function(){
                 <h3 class="bean-listing-origin brown">${bean.origin}</h3>
                 <p class="bean-listing-roast">${bean.roast}</p>
                 <p class="bean-listing-notes">${bean.notes}</p>
+                <p class="bean-listing-notes">Stocks: ${bean.stocks}</p>
                 <a href="" class="add-to-cart">Add to Cart</a>
             </div>
         </div>

@@ -256,10 +256,11 @@ body{
     padding: 0.5em;
 }
 .bean-listing-img{
-    width: 50%;
+    width: 47%;
+    margin-right: 0.5em;
 }
 .bean-info{
-    width: 50%;
+    width: 47%;
 }
 .bean-info p{
     margin: 0.5em 0;
@@ -376,4 +377,7 @@ article.bean{
 }
 article.bean:nth-of-type(odd){
     background-color:rgba(139, 69, 19, 0.2);
+}
+.create-bean-title{
+    font-size: 1.5rem;
 }
