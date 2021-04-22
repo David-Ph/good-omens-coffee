@@ -7,5 +7,4 @@ beansBlock.addEventListener('click', (e) =>{
             method: 'DELETE'
         } ).then((resp) => resp.text()).then(() => window.history.go());
     }
-
 })

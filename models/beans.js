@@ -6,7 +6,7 @@ let beanSchema = new Schema({
     origin: String,
     roast: String,
     notes: String,
-    stocks: Number,
+    price: Number,
     imageURL: String
 });
 

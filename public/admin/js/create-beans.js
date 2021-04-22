@@ -2,7 +2,7 @@ let createForm = document.querySelector('.create-bean-form');
 let createOrigin = document.querySelector('#create-origin');
 let createRoast = document.querySelector('#create-roast');
 let createNotes = document.querySelector('#create-notes');
-let createStocks = document.querySelector('#create-stocks');
+let createPrice = document.querySelector('#create-price');
 let createImageUrl = document.querySelector('#create-image-url');
 let createImageFile = document.querySelector('#create-image-file');
 
@@ -13,7 +13,7 @@ createForm.addEventListener('submit', (e) =>{
     data.append('origin', createOrigin.value);
     data.append('roast', createRoast.value);
     data.append('notes', createNotes.value);
-    data.append('stocks', createStocks.value);
+    data.append('price', createPrice.value);
     data.append('imageUrl', createImageUrl.value);
     data.append('imageFile', createImageFile.files[0]);
 

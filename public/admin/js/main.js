@@ -26,8 +26,8 @@ async function addBeans(){
             <input type="hidden" class="id" value="${bean.id}">
             <div class="origin w30">${bean.origin}</div>
             <div class="roast-level w20">${bean.roast}</div>
-            <div class="stocks w30">Stock left: ${bean.stocks}</div>
-            <div class="edit w10"><button class="btn btn-link">Edit</button></div>
+            <div class="price w30">Price: ${bean.price}</div>
+            <div class="edit w10"><button class="btn btn-link btn-edit">Edit</button></div>
             <div class="remove w5"><button class="btn btn-link btn-remove">X</button></div>
         </article>
         `;

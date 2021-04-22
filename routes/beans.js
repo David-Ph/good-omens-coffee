@@ -8,7 +8,11 @@ router.get('/', async (req, resp) =>{
     let beans = await Bean.find();
     resp.send(beans);
 });
-
+router.get('/:id', async(req, resp) =>{
+    let id = req.params.id;
+    let bean = await Bean.findOne({id: id});
+    resp.send(bean);
+})
 router.post('/', async (req, resp) =>{
     let reqBody = req.body;
     let imgPath;
@@ -22,7 +26,7 @@ router.post('/', async (req, resp) =>{
         origin: reqBody.origin,
         roast: reqBody.roast,
         notes: reqBody.notes,
-        stocks: reqBody.stocks,
+        price: reqBody.price,
         imageURL: imgPath
     });
     await newBean.save()
@@ -32,6 +36,11 @@ router.delete('/:id', async (req, resp) =>{
     let id = req.params.id;
     await Bean.deleteOne({id: id});
     resp.send('Deleted!');
+})
+router.put('/:id', async(req, resp) =>{
+    let id = req.params.id;
+    await Bean.updateOne({id: id}, req.body);
+    resp.send('Updated!');
 })
 
 module.exports = router;
