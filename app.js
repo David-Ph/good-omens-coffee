@@ -5,8 +5,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const Bean = require('./models/beans').Bean;
 const multer = require('multer');
+const Bean = require('./models/beans').Bean;
+const beansRouter = require('./routes/beans');
+
 
 ////////////////////////////////////
 // SERVER SETTING /////////////////
@@ -26,35 +28,11 @@ let imageStorage = multer.diskStorage({
 })
 app.use(multer({storage: imageStorage}).single('imageFile'));
 
-let id = 1;
-
 ///////////////////////////////////
 // ROUTES ////////////////////
 ///////////////////////////////////
 
-app.get('/beans', async (req, resp) =>{
-    let beans = await Bean.find();
-    resp.send(beans);
-});
-app.post('/beans', async (req, resp) =>{
-    let reqBody = req.body;
-    let imgPath;
-    if(reqBody.imageURL){
-        imgPath = reqBody.imageURL;
-    }else{
-        imgPath = req.file.path.substring(req.file.path.indexOf('\\'), req.file.path.length);
-    }
-    let newBean = new Bean({
-        id: id++,
-        origin: reqBody.origin,
-        roast: reqBody.roast,
-        notes: reqBody.notes,
-        stocks: reqBody.stocks,
-        imageURL: imgPath
-    });
-    await newBean.save()
-    resp.send('Created!');
-})
+app.use('/beans', beansRouter);
 
 ///////////////////////////////////
 // PORT SETTING ////////////////////
