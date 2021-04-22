@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', async function(){
         <div class="bean-listing">
             <img src="${bean.imageURL}" alt="${bean.origin}" class="bean-listing-img">
             <div class="bean-info">
-                <h3 class="bean-listing-origin brown" value="${bean.origin}">${bean.origin}</h3>
+                <h3 class="bean-listing-origin brown" data-origin="${bean.origin}">${bean.origin}</h3>
+                <input type="hidden" class="id" value="${bean.id}">
                 <p class="bean-listing-roast">${bean.roast}</p>
                 <p class="bean-listing-notes">${bean.notes}</p>
-                <p class="bean-listing-price" value="${bean.price}">Price: ${bean.price}</p>
-                <a href="" class="add-to-cart">Add to Cart</a>
+                <p class="bean-listing-price" data-price="${bean.price}">Price: ${bean.price}</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
         `;

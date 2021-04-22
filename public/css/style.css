@@ -266,11 +266,12 @@ body{
     margin: 0.5em 0;
 }
 .add-to-cart{
-    padding: 0.3em;
+    padding: 0.4em;
     text-decoration: none;
     color: #fff;
     background-color: saddlebrown;
     border-radius: 25px;
+    border: none;
 }
 .add-to-cart:hover{
     color: sandybrown;
@@ -292,6 +293,28 @@ body{
     .bean-listing{
         width: 31%;
     }
+}
+/* ///// */
+/* CART */
+/* //// */
+
+.cart-container{
+    margin-bottom: 2em;
+}
+.cart-title{
+    font-size: 1.5rem;
+    border-bottom: 2px solid saddlebrown;
+}
+.cart{
+    border-bottom: 2px solid saddlebrown;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-total{
+    margin: 1em 0;
 }
 
 /* /////////////// */
@@ -345,13 +368,13 @@ body{
 .btn-link{
     color: sandybrown;
 }
-.create-bean-btn{
+.create-bean-btn, .order-btn{
     background-color: rgba(0, 0, 0,0.5);
     border: 2px solid saddlebrown;
     border-radius: 10px;
     margin-bottom: 0.5em;
 }
-.create-bean-btn:hover{
+.create-bean-btn:hover, .order-btn:hover{
     background-color: saddlebrown;
     border: 2px solid saddlebrown;
 }
@@ -360,8 +383,8 @@ article.bean{
     justify-content: space-between;
     align-items: center;
 }
-.w5{
-    width: 5%;
+.w45{
+    width: 45%;
 }
 .w30{
     width: 30%;
@@ -375,9 +398,11 @@ article.bean{
 .w5{
     width: 5%;
 }
-article.bean:nth-of-type(odd){
+article.bean:nth-of-type(odd), .cart-item:nth-of-type(odd){
     background-color:rgba(139, 69, 19, 0.2);
 }
 .create-bean-title{
     font-size: 1.5rem;
 }
+
+

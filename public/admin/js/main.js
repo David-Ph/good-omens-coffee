@@ -1,7 +1,7 @@
 const createBeanBtn = document.querySelector('#create-bean-btn');
 
 
-document.addEventListener('DOMContentLoaded', async function(){
+document.addEventListener('DOMContentLoaded', function(){
     addBeans();
 })
 
