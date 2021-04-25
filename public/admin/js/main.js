@@ -2,6 +2,8 @@ const createBeanBtn = document.querySelector('#create-bean-btn');
 
 
 document.addEventListener('DOMContentLoaded', function(){
+    // add the beans and orders to the HTML
+    // both of these functions make a GET request
     addBeans();
     addOrders();
 })
@@ -42,10 +44,15 @@ async function addOrders(){
     ordersBlock.innerHTML = '';
     let i = 1;
     orders.forEach((order) => {
+        // because the ordered beans is an array
         let orderedBeans = order.orders;
+        // create a new variable to store the entire array HTML
         let orderedBeansHTML = '';
+        // so for each bean in the array, make a separate HTML
         orderedBeans.forEach((bean) =>{
+            // Just a simple dash and a linebreak for each bean
             let beanHTML = `- ${bean}<br>`;
+            // and store it in the variable above
             orderedBeansHTML += beanHTML;
         })
         let orderHTML = `
