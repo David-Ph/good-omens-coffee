@@ -38,13 +38,27 @@
     <main>
         <section class="shop-container container-section">
             <div class="container">
-                <div class="transparent-box cart-container">
+                <div class="transparent-box cart-container hidden-box">
                     <div class="cart-box">
                         <h2 class="quote cart-title">Your Cart</h2>
                         <div class="cart">           
                         </div>
                         <div class="price-total">Total Price: <span id="total-price"></span></div>
-                        <button class="btn btn-primary order-btn">Order!</button>
+                        <button class="btn btn-primary order-btn">Make an order</button>
+                    </div>
+                    <div class="order-box hidden-box">
+                        <h2 class="quote cart-title">Enter your information</h2>
+                        <form action="" class="order-form">
+                            <div class="form-group">
+                                <label for="order-name">Name</label>
+                                <input type="text" class="form-control" id="order-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="order-address">Full Address</label>
+                                <textarea name="" class="form-control" id="order-address" cols="30" rows="2"></textarea>
+                            </div>
+                            <button class="btn btn-primary order-btn submit-order-btn">Submit</button>
+                        </form>
                     </div>
                 </div>
                 <div class="transparent-box">

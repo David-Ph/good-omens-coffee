@@ -24,7 +24,7 @@ body{
 }
 .container-section{
     min-height: 90vh;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     padding: 3em 0;
 }
@@ -42,6 +42,9 @@ body{
 }
 .brown{
     color:sandybrown;
+}
+.hidden-box{
+    display: none;
 }
 
 /* /////////////// */
@@ -316,6 +319,9 @@ body{
 .price-total{
     margin: 1em 0;
 }
+.order-box{
+    margin-top: 1em;
+}
 
 /* /////////////// */
 /* ABOUT US */
@@ -386,6 +392,9 @@ article.bean{
 .w45{
     width: 45%;
 }
+.w40{
+    width: 40%;
+}
 .w30{
     width: 30%;
 }
@@ -404,5 +413,6 @@ article.bean:nth-of-type(odd), .cart-item:nth-of-type(odd){
 .create-bean-title{
     font-size: 1.5rem;
 }
-
-
+.order-article{
+    margin-bottom: 1em;
+}

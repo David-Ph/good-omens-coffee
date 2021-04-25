@@ -8,6 +8,8 @@ const mongoose = require('mongoose');
 const multer = require('multer');
 const Bean = require('./models/beans').Bean;
 const beansRouter = require('./routes/beans');
+const Order = require('./models/order').Order;
+const ordersRouter = require('./routes/orders');
 
 
 ////////////////////////////////////
@@ -33,6 +35,15 @@ app.use(multer({storage: imageStorage}).single('imageFile'));
 ///////////////////////////////////
 
 app.use('/beans', beansRouter);
+app.use('/orders', ordersRouter)
+// let order1 = new Order({
+//     name: 'Bambang',
+//     address: 'Border',
+//     orders: ['Colombia', 'Aceh Gayo', 'Bambang'],
+//     total: 500000
+// })
+
+// order1.save();
 
 ///////////////////////////////////
 // PORT SETTING ////////////////////
