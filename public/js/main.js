@@ -1,4 +1,8 @@
-document.addEventListener('DOMContentLoaded', async function(){
+document.addEventListener('DOMContentLoaded', function(){
+    addBeansShop();
+})
+
+async function addBeansShop(){
     let beans = await getBeans();
     let beansShop = document.querySelector('.shop');
     beansShop.innerHTML = '';
@@ -18,4 +22,4 @@ document.addEventListener('DOMContentLoaded', async function(){
         `;
         beansShop.insertAdjacentHTML('beforeend', beanHTML);
     })
-})
+}

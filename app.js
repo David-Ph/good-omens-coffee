@@ -2,6 +2,7 @@
 // REQUIRE PACKAGE //
 /////////////////////
 
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -15,6 +16,10 @@ const ordersRouter = require('./routes/orders');
 ////////////////////////////////////
 // SERVER SETTING /////////////////
 ///////////////////////////////////
+
+// DOTENV
+let apiKey = process.env.API_KEY;
+let appId = process.env.APP_ID;
 
 // MONGODB
 mongoose.connect('mongodb://localhost:27017/coffees', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -35,15 +40,7 @@ app.use(multer({storage: imageStorage}).single('imageFile'));
 ///////////////////////////////////
 
 app.use('/beans', beansRouter);
-app.use('/orders', ordersRouter)
-// let order1 = new Order({
-//     name: 'Bambang',
-//     address: 'Border',
-//     orders: ['Colombia', 'Aceh Gayo', 'Bambang'],
-//     total: 500000
-// })
-
-// order1.save();
+app.use('/orders', ordersRouter);
 
 ///////////////////////////////////
 // PORT SETTING ////////////////////
