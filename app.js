@@ -18,13 +18,13 @@ const ordersRouter = require('./routes/orders');
 // DOTENV
 let apiKey = process.env.API_KEY;
 
-
 // MONGODB
 mongoose.connect('mongodb://localhost:27017/coffees', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // GENERAL SETTING
 app.use(express.static('public'));
 app.use(express.json());
+app.set('view engine', 'ejs');
 
 // multer setting
 let imageStorage = multer.diskStorage({
@@ -41,8 +41,10 @@ app.use('/beans', beansRouter);
 app.use('/orders', ordersRouter);
 
 app.get('/getApiKey', (req, resp) => {
-    console.log("Hello There");
     resp.send(apiKey);
+})
+app.get('/login', (req, resp) =>{
+    resp.render('login');
 })
 
 ///////////////////////////////////

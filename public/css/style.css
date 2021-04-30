@@ -379,13 +379,13 @@ body{
 .btn-link{
     color: sandybrown;
 }
-.create-bean-btn, .order-btn{
+.create-bean-btn, .order-btn, .register-btn, .sign-in-btn{
     background-color: rgba(0, 0, 0,0.5);
     border: 2px solid saddlebrown;
     border-radius: 10px;
     margin-bottom: 0.5em;
 }
-.create-bean-btn:hover, .order-btn:hover{
+.create-bean-btn:hover, .order-btn:hover, .register-btn:hover, .sign-in-btn:hover{
     background-color: saddlebrown;
     border: 2px solid saddlebrown;
 }
@@ -421,3 +421,20 @@ article.bean:nth-of-type(odd), .cart-item:nth-of-type(odd){
 .order-article{
     margin-bottom: 1em;
 }
+
+/* ////////// */
+/* LOGIN PAGE */
+/* ////////// */
+ .login-container{
+     background-image: url('../img/background/login-bg.jpg');
+
+ }
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+     color: #fff;
+ }
+ .login h2{
+     margin-bottom: 1em;
+ }
+ #myTab{
+     margin-bottom: 1em;
+ }
