@@ -342,6 +342,7 @@ body{
 }
 .map{
     margin: 2em 1em;
+    height: 400px;
 }
 .temp-map{
     width: 100%;

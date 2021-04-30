@@ -7,9 +7,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const multer = require('multer');
-const Bean = require('./models/beans').Bean;
 const beansRouter = require('./routes/beans');
-const Order = require('./models/order').Order;
 const ordersRouter = require('./routes/orders');
 
 
@@ -19,7 +17,7 @@ const ordersRouter = require('./routes/orders');
 
 // DOTENV
 let apiKey = process.env.API_KEY;
-let appId = process.env.APP_ID;
+
 
 // MONGODB
 mongoose.connect('mongodb://localhost:27017/coffees', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -41,6 +39,11 @@ app.use(multer({storage: imageStorage}).single('imageFile'));
 
 app.use('/beans', beansRouter);
 app.use('/orders', ordersRouter);
+
+app.get('/getApiKey', (req, resp) => {
+    console.log("Hello There");
+    resp.send(apiKey);
+})
 
 ///////////////////////////////////
 // PORT SETTING ////////////////////
