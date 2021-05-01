@@ -2,8 +2,9 @@ const uniqid = require('uniqid');
 const Order = require('../models/order').Order;
 const express = require('express');
 const router = express.Router();
+const checkAuth = require('../middleware/auth');
 
-router.get('/', async(req, resp) =>{
+router.get('/', checkAuth, async(req, resp) =>{
     let orders = await Order.find();
     resp.send(orders);
 })
@@ -21,7 +22,7 @@ router.post('/', async (req, resp) =>{
     resp.send('Order sent!');
 });
 
-router.delete('/:id', async(req, resp) => {
+router.delete('/:id', checkAuth, async(req, resp) => {
     let id = req.params.id;
     await Order.deleteOne({id: id});
     resp.send('Deleted!');

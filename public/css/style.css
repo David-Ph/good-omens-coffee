@@ -379,13 +379,13 @@ body{
 .btn-link{
     color: sandybrown;
 }
-.create-bean-btn, .order-btn, .register-btn, .sign-in-btn{
+.create-bean-btn, .order-btn, .register-btn, .sign-in-btn, .logout-btn{
     background-color: rgba(0, 0, 0,0.5);
     border: 2px solid saddlebrown;
     border-radius: 10px;
     margin-bottom: 0.5em;
 }
-.create-bean-btn:hover, .order-btn:hover, .register-btn:hover, .sign-in-btn:hover{
+.create-bean-btn:hover, .order-btn:hover, .register-btn:hover, .sign-in-btn:hover, .logout-btn:hover{
     background-color: saddlebrown;
     border: 2px solid saddlebrown;
 }

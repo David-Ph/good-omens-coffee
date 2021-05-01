@@ -2,6 +2,7 @@ const uniqid = require('uniqid');
 const Bean = require('../models/beans').Bean;
 const express = require('express');
 const router = express.Router();
+const checkAuth = require('../middleware/auth');
 
 
 router.get('/', async (req, resp) =>{
@@ -13,7 +14,7 @@ router.get('/:id', async(req, resp) =>{
     let bean = await Bean.findOne({id: id});
     resp.send(bean);
 })
-router.post('/', async (req, resp) =>{
+router.post('/', checkAuth, async (req, resp) =>{
     let reqBody = req.body;
     let imgPath;
     if(reqBody.imageUrl){
@@ -32,12 +33,12 @@ router.post('/', async (req, resp) =>{
     await newBean.save()
     resp.send('Created!');
 })
-router.delete('/:id', async (req, resp) =>{
+router.delete('/:id', checkAuth, async (req, resp) =>{
     let id = req.params.id;
     await Bean.deleteOne({id: id});
     resp.send('Deleted!');
 })
-router.put('/:id', async(req, resp) =>{
+router.put('/:id', checkAuth, async(req, resp) =>{
     let id = req.params.id;
     await Bean.updateOne({id: id}, req.body);
     resp.send('Updated!');
