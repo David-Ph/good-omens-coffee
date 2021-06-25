@@ -2,6 +2,8 @@
 
 A simple side project I created using everything I learned from udemy courses.
 
+![GIF Showcase](https://imgur.com/a/6fiZ1yJ)
+
 - A website where a user can order coffee beans
 - Fully responsive design
 - In About Us page, there's an interactive map using HERE API.
