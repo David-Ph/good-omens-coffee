@@ -1,6 +1,16 @@
-# good-omens-coffee
+# Good Omens Coffee
 
 A simple side project I created using everything I learned from udemy courses.
+
+## Technologies
+..* Javascript
+..* Node JS
+..* Express JS
+..* MongoDB
+..* Passport JS
+..* Bootstrap
+..* EJS
+..* Multer
 
 [GIF Showcase](https://imgur.com/a/6fiZ1yJ)
 
