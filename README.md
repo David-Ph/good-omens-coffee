@@ -15,6 +15,14 @@ A simple side project I created using everything I learned from udemy courses.
 [GIF Showcase](https://imgur.com/a/6fiZ1yJ)
 
 ## Features
+* [Responsive Design](https://github.com/David-Ph/good-omens-coffee#responsive-design)
+* [Making an order](https://github.com/David-Ph/good-omens-coffee#user-can-make-an-order)
+* [Admin authorization](https://github.com/David-Ph/good-omens-coffee#admin-authorization-and-authentication)
+* [Admin page](https://github.com/David-Ph/good-omens-coffee#admin-page-for-creating-editing-and-deleting-beans-and-orders)
+* [Adding new beans](https://github.com/David-Ph/good-omens-coffee#admin-can-create-new-beans)
+* [Orders List](https://github.com/David-Ph/good-omens-coffee#admin-can-see-orders)
+* [Interactable Map](https://github.com/David-Ph/good-omens-coffee#in-about-us-page-theres-an-interactive-map-using-here-api) 
+
 ### Responsive Design
 ![Web Design](https://i.imgur.com/AbSZdYL.png)
 ![Mobile Design](https://i.imgur.com/lIa1zUu.png)
