@@ -1,5 +1,6 @@
 # Good Omens Coffee
 
+A web for customers to browse and order coffee beans.
 A simple side project I created using everything I learned from udemy courses.
 
 ## Technologies
