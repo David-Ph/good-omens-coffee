@@ -3,6 +3,10 @@
 A web for customers to browse and order coffee beans.
 A simple side project I created using everything I learned from udemy courses.
 
+[GIF Showcase](https://imgur.com/a/6fiZ1yJ)
+
+[Click here to go to live website](https://good-omens-coffee.herokuapp.com/)
+
 ## Technologies
 * Javascript
 * Node JS
@@ -12,8 +16,6 @@ A simple side project I created using everything I learned from udemy courses.
 * Bootstrap
 * EJS
 * Multer
-
-[GIF Showcase](https://imgur.com/a/6fiZ1yJ)
 
 ## Features
 * [Responsive Design](https://github.com/David-Ph/good-omens-coffee#responsive-design)
