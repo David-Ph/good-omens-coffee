@@ -16,7 +16,7 @@ createForm.addEventListener("submit", (e) => {
   data.append("imageUrl", createImageUrl.value);
   data.append("imageFile", createImageFile.files[0]);
 
-  fetch("http://localhost:3000/beans", {
+  fetch("https://good-omens-coffee.herokuapp.com/beans", {
     method: "POST",
     body: data,
   })

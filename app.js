@@ -15,11 +15,13 @@ const User = require("./models/users").User;
 const passportLocalMongoose = require("passport-local-mongoose");
 const usersRouter = require("./routes/users");
 const checkAuth = require("./middleware/auth");
+const cors = require("cors");
 
 ////////////////////////////////////
 // SERVER SETTING /////////////////
 ///////////////////////////////////
 // GENERAL SETTING
+app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 app.set("view engine", "ejs");
