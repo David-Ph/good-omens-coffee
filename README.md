@@ -1,13 +1,49 @@
-# good-omens-coffee
+# Good Omens Coffee
 
+A web for customers to browse and order coffee beans.
 A simple side project I created using everything I learned from udemy courses.
+
+## Technologies
+* Javascript
+* Node JS
+* Express JS
+* MongoDB
+* Passport JS
+* Bootstrap
+* EJS
+* Multer
 
 [GIF Showcase](https://imgur.com/a/6fiZ1yJ)
 
-- A website where a user can order coffee beans
-- Fully responsive design
-- In About Us page, there's an interactive map using HERE API.
-- In Shop, users can see available beans, add beans to cart, and finally enter an address to make an order
-- In Admin page, it's possible to register and login.
-- After logging in and authorized, admins can add new beans, update new beans, and delete beans.
-- Admins can also see orders made and delete them after they're completed.
+## Features
+* [Responsive Design](https://github.com/David-Ph/good-omens-coffee#responsive-design)
+* [Making an order](https://github.com/David-Ph/good-omens-coffee#user-can-make-an-order)
+* [Admin authorization](https://github.com/David-Ph/good-omens-coffee#admin-authorization-and-authentication)
+* [Admin page](https://github.com/David-Ph/good-omens-coffee#admin-page-for-creating-editing-and-deleting-beans-and-orders)
+* [Adding new beans](https://github.com/David-Ph/good-omens-coffee#admin-can-create-new-beans)
+* [Orders List](https://github.com/David-Ph/good-omens-coffee#admin-can-see-orders)
+* [Interactable Map](https://github.com/David-Ph/good-omens-coffee#in-about-us-page-theres-an-interactive-map-using-here-api) 
+
+### Responsive Design
+![Web Design](https://i.imgur.com/AbSZdYL.png)
+![Mobile Design](https://i.imgur.com/lIa1zUu.png)
+![Web Design](https://i.imgur.com/KTlowuZ.png)
+![Mobile Deisgn](https://i.imgur.com/xrB0oGB.png)
+
+### User can make an order
+![Orders](https://i.imgur.com/VF2JPg5.png)
+
+### Admin authorization and authentication
+![Login](https://i.imgur.com/d8x8IWb.png)
+
+### Admin page for creating, editing, and deleting beans and orders
+![Admin](https://i.imgur.com/h5YZJNk.png)
+
+### Admin can create new beans
+![Create bean](https://i.imgur.com/lIa1zUu.png)
+
+### Admin can see orders
+![Orders](https://i.imgur.com/IHVmuEX.png)
+
+### In About Us page, there's an interactive map using HERE API
+![MAP](https://i.imgur.com/E6nW8Ta.png)
